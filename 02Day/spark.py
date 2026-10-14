@@ -15,4 +15,4 @@ try:
     result_df.show()
     
 finally:
-    spark.stop
+    spark.stop()
