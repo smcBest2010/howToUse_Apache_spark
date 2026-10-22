@@ -4,7 +4,7 @@ from pyspark.sql import functions as F
 spark = SparkSession.builder.appName("day05").getOrCreate() 
 
 try: 
-    df = spark.read.csv("../03Day/data/sales.csv", header=True, inferSchema=True) 
+    df = spark.read.csv("data/sales.csv", header=True, inferSchema=True) 
     
     result_df = df.groupBy("city").agg( 
         F.count("*").alias("총주문"), 
