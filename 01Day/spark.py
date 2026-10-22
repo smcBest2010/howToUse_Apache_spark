@@ -7,4 +7,4 @@ df = spark.createDataFrame(data, ["번호", "과일"])  # 표 만들기
 
 df.show()  # 표 보기
 
-spark.stop()  # Spark 종료
+spark.stop() # Spark 종료
